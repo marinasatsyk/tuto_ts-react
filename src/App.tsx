@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { FC } from 'react';
 import './App.css';
+import { Person } from './components/Person';
 
-function App() {
+const App: FC = () => {
+  // const name: string = "Marina";
+  // const age: number = 38;
+  // const isMarried: boolean = true;
+
+  // //the value of return is after ()
+  // const getName = (name: string): number => {
+  //   if (name === "Marina") {
+  //     return 38
+  //   } else {
+  //     return 0
+  //   }
+
+  // }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Person name='Marina' age={38} email="marinasatsyk@gmail.com" />
   );
 }
 
 export default App;
+
+// <div className="App">
+    //   <h1>{name}</h1>
+    // </div>
+
